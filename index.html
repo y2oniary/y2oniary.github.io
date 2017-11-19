@@ -9,7 +9,139 @@
 </head>
 
 <body>
-  <h1>Yeoniary</h1>
+  <!-- 스크린 리더를 위한 본문 바로가기 -->
+  <div>
+    <a href="#" class="a11y--invisible">본문 바로가기</a>
+  </div>
+  <div class="wrap">
+    <!-- header -->
+    <header class="header">
+      <h1 class="header__logo">Logo</h1>
+      <ul class="header__member">
+        <li>로그인</li>
+        <li>회원가입</li>
+        <li>커뮤니티</li>
+      </ul>
+      <div class="header__search">
+        <h2 class="search__heading--invisible">검색</h2>
+        <form action="#">
+          <fieldset>
+            <legend>검색</legend>
+            <input type="search" placeholder="검색어를 입력하세요">
+            <button type="submit">검색</button>
+          </fieldset>
+        </form>
+      </div>
+    </header>
+    <!-- nav -->
+    <nav class="nav">
+      <h2 class="nav__heading--invisible"></h2>
+      <ul class="nav__main-menu">
+        <li>
+          <span>HTML에 대해</span>
+          <ul class="nav__sub-menu">
+            <li>HTML5 소개</li>
+            <li>레퍼런스 소개</li>
+            <li>활용예제</li>
+          </ul>
+        </li>
+        <li>
+          <span>CSS에 대해</span>
+          <ul class="nav__sub-menu">
+            <li>CSS 소개</li>
+            <li>CSS2 VS CSS3</li>
+            <li>CSS3 애니메이션</li>
+          </ul>
+        </li>
+        <li>
+          <span>웹표준/웹접근성</span>
+          <ul class="nav__sub-menu">
+            <li>웹표준이란?</li>
+            <li>웹접근성의 개요</li>
+            <li>HTML5의 현재와 미래</li>
+          </ul>
+        </li>
+        <li>
+          <span>묻고 답하기</span>
+          <ul class="nav__sub-menu">
+            <li>묻고 답하기</li>
+            <li>FAQ</li>
+            <li>1대1 질문</li>
+          </ul>
+        </li>
+        <li>
+          <span>자료실</span>
+          <ul class="nav__sub-menu">
+            <li>공개 자료실</li>
+            <li>이미지 자료실</li>
+            <li>예제 자료실</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- main -->
+    <main class="main">
+      <section class="main__recommend">
+        <h2 class="recommend__heading">추천 서적
+          <span>Recommend Book</span>
+        </h2>
+        <div>
+          <img src="" alt="">
+          <h3>웹표준 핵심가이드북 HTML5+CSS3</h3>
+          <span>저자 김데레사</span>
+          <p>웹표준 핵심 가이드북 HTML5&CSS3 개정판이 새로운 예제로 출간되었습니다. 많은 성원 부탁드립니다.</p>
+        </div>
+      </section>
+      <article class="main__news">
+        <h2 class="news__heading">새 소식
+          <span>Webcafe News</span>
+        </h2>
+        <div>
+          <h3 class="heading--invisible">Video</h3>
+          <video src=""></video>
+          <p>웹표준 핵심가이드 북 개정판 출판을 기념하여 저자의 강의가 있었습니다. 많은 분들이 강의에 참석을 해주셨으며 웹에 대한 많은 이야기를 나눌 수 있는 소중한 시간이었습니다.</p>
+          <span>2017.11.19</span>
+        </div>
+      </article>
+      <section class="main__board">
+        <h2 class="board__heading">게시판
+          <span>Webcafe Board</span>
+        </h2>
+      </section>
+      <article class="main__twitter">
+        <h2 class="twitter__heading">웹카페 트위터
+          <span>Webcafe Twitter</span>
+        </h2>
+      </article>
+      <section class="main__favorite">
+        <h2 class="favorite__heading">인기 사이트
+          <span>Favorite Site</span>
+        </h2>
+      </section>
+    </main>
+    <!-- slogan -->
+    <section class="slogan">
+      <h2 class="slogoan__heading">
+        <img src="" alt="">Slogan</h2>
+      <q class="slogan__quote">The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.</q>
+      <span class="slogan__cite">
+        <cite>Tim Berners - Lee</cite> , W3C Director and inventor of the World Wide Web</span>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <h2 class="footer__heading--invisible">Footer</h2>
+      <address class="footer__address">
+        <span>서울시 마포구 상수동 123-12 한주빌딩 5층</span>
+        <span>전화: 02-234-5678</span>
+        <span>이메일:
+          <a>seulbinim@gmail.com</a>
+        </span>
+      </address>
+      <p class="footer__copyright">
+        <small>Copyright since © 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED.</small>
+      </p>
+    </footer>
+  </div>
 </body>
 
 </html>
