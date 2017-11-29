@@ -1,0 +1,62 @@
+/* font-family: Oswald */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Oswald-Bold'),
+  local('Oswald Bold'),
+  url('fonts/Oswald/Oswald-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: regular;
+  src: local('Oswald-Regular'), local('Oswald Regular'), url('fonts/Oswald/Oswald-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: light;
+  src: local('Oswald-Light'), local('Oswald Light'), url('fonts/Oswald/Oswald-Light.ttf');
+}
+
+
+/* font-family: PTSerif */
+@font-face {
+  font-family: 'PTSerif';
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/PT_Serif/PT_Serif-Web-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  font-style: normal;
+  font-weight: regular;
+  src: url('fonts/PT_Serif/PT_Serif-Web-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  font-style: italic;
+  font-weight: bold;
+  src: url('fonts/PT_Serif/PT_Serif-Web-Bolditalic.ttf');
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  font-style: italic;
+  font-weight: regular;
+  src: url('fonts/PT_Serif/PT_Serif-Web-Italic.ttf');
+}
+
+
+/* font-family: VarelaRound */
+@font-face {
+  font-family: 'VarelaRound';
+  font-style: normal;
+  font-weight: regular;
+  src: url('fonts/Varela_Round/VarelaRound-Regular.ttf');
+}
