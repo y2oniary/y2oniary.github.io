@@ -248,7 +248,7 @@ figure img {
   left: 0px;
   font-family: Oswald, sans-serif;
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #1f4ba5;
@@ -269,7 +269,7 @@ figure img {
   right: 0px;
   font-family: PTserif, sans-serif;
   font-size: 0.6rem;
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
   letter-spacing: 1px;
 }
@@ -277,7 +277,7 @@ figure img {
 .header__author span {
   font-family: Oswald, sans-serif;
   font-size: 0.6rem;
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   letter-spacing: 1px;
 }
@@ -380,7 +380,6 @@ figure img {
   display: block;
   font-family: VarelaRound, sans-serif;
   font-size: 0.8rem;
-  font-weight: bold;
   font-style: normal;
   color: #222222;
 }
@@ -513,7 +512,7 @@ figure img {
   
   font-family: Oswald, sans-serif;
   font-size: 0.6rem;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 1px;
   color: #ffffff;
 }
