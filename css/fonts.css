@@ -44,7 +44,7 @@
   font-family: 'PTSerif';
   font-style: italic;
   font-weight: 700;
-  src: url('fonts/PT_Serif/PT_Serif-Web-Bolditalic.woff') format('woff'), url('fonts/PT_Serif/PT_Serif-Web-Bolditalic.ttf') format('truetype');
+  src: url('fonts/PT_Serif/PT_Serif-Web-BoldItalic.woff') format('woff'), url('fonts/PT_Serif/PT_Serif-Web-BoldItalic.ttf') format('truetype');
 }
 
 @font-face {
