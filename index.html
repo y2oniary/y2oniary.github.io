@@ -5,152 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Article</title>
+  <title>Shop</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .box1 {
+      background-color: orange;
+    }
+
+    .box2 {
+      background-color: lime;
+    }
+
+    .box3 {
+      background-color: skyblue;
+    }
+
+    .box4 {
+      background-color: violet;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
-    <h1 class="container__heading invisible">My Blog</h1>
-    <article>
-      <header class="header">
-        <h2 class="header__heading">What You Learn in an Afternoon With a Brewmaster</h2>
-        <p class="header__desc">They're telling me that their conversation about what it means to be Catholic continues. Together, you represent
-          the harmony between tradition and progress.</p>
-        <strong class="header__category">
-          <a href="#">fashion</a>
-        </strong>
-        <time class="header__date">May 31, 2015</time>
-        <em class="header__author">by
-          <span>BAHODIR KOMILOV</span>
-        </em>
-      </header>
-      <main class="main">
-        <section class="content-1">
-          <h3 class="content-1__heading invisible">Come together!</h3>
-          <p class="content-1__para">
-            Because we all have the capacity to do justice and show mercy; to treat others with dignity and respect; and to rise above
-            what divides us and come together to meet those challenges we can't meet alone. This is where we are right now.
-            Because we reject the same thing that people of all faiths reject: the killing of innocent men, women, and children.
-            America will not turn our backs on the legitimate Palestinian aspiration for dignity, opportunity, and a state
-            of their own. I know that for many, the face of globalization is contradictory.
-          </p>
-          <figure class="content-1__img">
-            <img src="images/content-1.png" alt="blue ocean">
-            <figcaption>Blue ocean</figcaption>
-          </figure>
-        </section>
-        <section class="content-2">
-          <h3 class="content-2__heading">10 Photos of Mike Tyson's Abandoned Ohio Mansion</h3>
-          <p class="content-2__para-1">
-            But if we do, I can tell you that in the next election, we'll be talking about some other distraction. This history is well
-            known. I do not believe that women must make the same choices as men in order to be equal, and I respect those
-            women who choose to live their lives in traditional roles. There is so much fear, so much mistrust.
-          </p>
-          <div class="content-2__bq clearfix">
-            <blockquote>
-              But if we do, I can tell you that in the next election, we'll be talking about some other distraction. This history is well
-              known. I do not believe that women must make the same choices as men in order to be equal, and I respect those
-              women who choose to live their lives in traditional roles. There is so much fear, so much mistrust.
-            </blockquote>
-            <figure class="content-2__figure-1">
-              <img src="images/author.png" alt="author">
-              <figcaption>
-                <em>Komol Kuchkarov</em>from Uzbekistan</figcaption>
-            </figure>
-          </div>
-          <div class="content-2__figure-2">
-            <figure>
-              <img src="images/content-2__1.png" alt="fashion week">
-              <figcaption>Fashion Week 2015</figcaption>
-            </figure>
-            <figure>
-              <img src="images/content-2__2.png" alt="love stroy">
-              <figcaption>Love Story</figcaption>
-            </figure>
-            <figure>
-              <img src="images/content-2__3.png" alt="russell crowe says">
-              <figcaption>Russell Crowe Says</figcaption>
-            </figure>
-            <figure>
-              <img src="images/content-2__4.png" alt="david duchovny channels his">
-              <figcaption>David Duchovny Channels His</figcaption>
-            </figure>
-          </div>
-          <div id="app" class="content-2__btn-container clearfix">
-            <button type="button" class="content-2__pre" @click="decrement">Previous</button>
-            <button type="button" class="content-2__next" @click="increment">Next</button>
-            <span class="content-2__pagination">{{ number }}
-              <sup>{{ '/' + maxNumber }} </sup>
-            </span>
-          </div>
-          <p class="content-2__para-2">
-            They're telling me that their conversation about what it means to be Catholic continues. Together, you represent the harmony
-            between tradition and pro-gress.
-          </p>
-          <figure class="content-2__figure-3">
-            <img src="images/content-2__5.png" alt="wolf from forest">
-            <figcaption>Wolf from Forest</figcaption>
-          </figure>
-        </section>
-        <section class="content-3">
-          <h3 class="content-3__heading">Pack Hacks: 5 Tips To Make Traveling Easier</h3>
-          <p class="content-3__para">
-            They are moral problems, rooted in both societal indifference and individual callousness - in the imperfections of man. I
-            can assure you it is not. And Ashley said that when she was nine years old, her mother got cancer.
-          </p>
-        </section>
-        <section class="content-4">
-          <h3 class="content-4__heading">Saulbacks: The Prequel's 'Breaking Bad' References</h3>
-          <p class="content-4__para">
-            Now is the time to finally meet our moral obligation to provide every child a world-class education, because it will take
-            nothing less to compete in the global economy.
-          </p>
-        </section>
-      </main>
-    </article>
-    <footer class="footer">
-      <ul class="footer__link">
-        <li class="footer__facebook">
-          <a href="#" title="facebook">24K</a>
-        </li>
-        <li class="footer__twitter">
-          <a href="#" title="twitter">356</a>
-        </li>
-        <li class="footer__google">
-          <a href="#" title="google">344K</a>
-        </li>
-        <li class="footer__pinterest">
-          <a href="#" title="pinterest">8M</a>
-        </li>
+    <h1 class="heading">Our Shop</h1>
+    <section class="content-1">
+      <ul class="row">
+        <li class="col-4 col-md-2 box1">Item 1</li>
+        <li class="col-4 col-md-2 box2">Item 2</li>
+        <li class="col-4 col-md-2 box3">Item 3</li>
+        <li class="col-4 col-md-2 box4">Item 4</li>
       </ul>
-      <a href="#" class="footer__back">Back to Blog</a>
-    </footer>
+    </section>
+    <section class="content-2">
+      <ul class="row">
+        <li class="col-4 col-md-6 push-md-1 box1">Item 1</li>
+        <li class="col-4 col-md-6 push-md-1 box2">Item 2</li>
+        <li class="col-4 col-md-6 push-md-1 box3">Item 3</li>
+        <li class="col-4 col-md-6 push-md-1 box4">Item 4</li>
+      </ul>
+    </section>
   </div>
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        number: 1,
-        maxNumber: 16
-      },
-
-      methods: {
-        increment: function () {
-          if (this.number < this.maxNumber) {
-            this.number++
-          }
-        },
-
-        decrement: function () {
-          if (this.number > 1) {
-            this.number--
-          }
-        }
-      }
-    })
-  </script>
 </body>
 
 </html>
