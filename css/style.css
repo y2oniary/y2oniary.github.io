@@ -204,6 +204,7 @@ a:focus {
 .heading {
   position: relative;
   width: 240px;
+  margin-top: 25px;
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -275,4 +276,24 @@ a:focus {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 100;
+}
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+
+    .heading {
+      margin: 5vw auto 0;
+      width: 80%;
+    }
+    
+    .work-list li {
+      margin: 5vh auto;
+      width: 90vw;
+      height: 70vh;
+
+    }
+
+
 }
