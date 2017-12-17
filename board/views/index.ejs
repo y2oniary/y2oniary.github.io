@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <p>
+    <a href="/new" title="새 글 쓰기">새 글 쓰기</a>
+  </p>
+  <p class="board-container">
+    <div class="board-item-1">글 번호</div>
+    <div class="board-item-1">이름</div>
+    <div class="board-item-2">글 제목</div>
+    <div class="board-item-2">작성 날짜</div>
+    <div class="board-item-1">조회 수</div>
+  </p>
+  <% for (let i = 0; i < results.length; i++) { %>
+    <p>
+      <div class="board-item-1"><%= results[i].number %></div>
+      <div class="board-item-1"><%= results[i].name %></div>
+      <div class="board-item-2"><a href="/show/<%= results[i].number %>"><%= results[i].title %></a></div>
+      <div class="board-item-2"><%= results[i].date %></div>
+      <div class="board-item-1"><%= results[i].hits %></div>
+    </p>
+    <% } %>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        input.btn {
+            width: 50px;
+            height: 40px;
+            margin: 5px;
+            font-size: 15pt;
+        }
+
+        .clr,
+        .equal {
+            width: 112px;
+            height: 40px;
+            margin: 5px;
+            font-size: 15pt;
+        }
+
+        #disp {
+            width: 295px;
+            height: 40px;
+            margin: 5px;
+            border: 2px solid green;
+            font-size: 22pt;
+            text-align: right;
+        }
+
+        .display {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<BODY>
+    <h2 align="center">계 산 기</h2>
+    <form name="calform">
+        <table border="0" align="center" cellspacing="0" style="border:2px solid blue;  ">
+            <tr>
+                <td colspan="5">
+                    <h1 class="display"></h1>
+                    <input type="text" name="disp" id="disp" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" class="btn" onclick="but('7')">
+                </td>
+                <td>
+                    <input type="button" value="8" class="btn" onclick="but('8')">
+                </td>
+                <td>
+                    <input type="button" value="9" class="btn" onclick="but('9')">
+                </td>
+                <td colspan="2">
+                    <input type="button" value="C" class="clr" onclick="c()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" class="btn" onclick="but('4')">
+                </td>
+                <td>
+                    <input type="button" value="5" class="btn" onclick="but('5')">
+                </td>
+                <td>
+                    <input type="button" value="6" class="btn" onclick="but('6')">
+                </td>
+                <td>
+                    <input type="button" value="/" class="btn" onclick="but('/')">
+                </td>
+                <td>
+                    <input type="button" value="%" class="btn" onclick="but('%')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" class="btn" onclick="but('1')">
+                </td>
+                <td>
+                    <input type="button" value="2" class="btn" onclick="but('2')">
+                </td>
+                <td>
+                    <input type="button" value="3" class="btn" onclick="but('3')">
+                </td>
+                <td>
+                    <input type="button" value="*" class="btn" onclick="but('*')">
+                </td>
+                <td>
+                    <input type="button" value="+" class="btn" onclick="but('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="0" class="btn" onclick="but('0')">
+                </td>
+                <td>
+                    <input type="button" value="." class="btn" onclick="but('.')">
+                </td>
+                <td colspan="2">
+                    <input type="button" value="=" class="equal" onclick="sum()">
+                </td>
+                <td>
+                    <input type="button" value="-" class="btn" onclick="but('-')">
+                </td>
+            </tr>
+        </table>
+    </form>
+</BODY>
+
+<script>
+    let total = '';
+    let temp = '';
+
+    function but(val) {
+
+        // total이 빈 문자열일 때
+        if (total.length === 0) {
+            // val이 0이 아닌 숫자이면
+            if (Number(val) && val !== '0') {
+                total += val;
+                temp += val;
+            }
+        }
+        // total이 빈 문자열이 아닐 때
+        else {
+            // total의 마지막 문자가 연산 기호이고
+            if (isNaN(total[total.length - 1]) && Number(total[total.length - 1] !== 0)) {
+                // val이 연산 기호이면
+                if ((!Number(val)) && val !== '0') {
+                    total = total.slice(0, total.length - 1) + val;
+                }
+                // val이 0이 아닌 자연수이면
+                else if (Number(total[total.length - 1] && val !== 0)) {
+                    total += val;
+                    temp += val;
+                }
+                // val이 0이면
+                else {
+                }
+            }
+            // total의 마지막 문자가 연산 기호가 아니고
+            else {
+                total += val;
+                // val이 연산 기호이면
+                if ((!Number(val)) && val !== '0') {
+                    
+                    temp = '';
+                }
+                // 
+                else {
+                    temp += val;
+                }
+            }
+        }
+        console.log(`total = ${total}`)
+        console.log(`temp = ${temp}`)
+        document.querySelector("#disp").value = temp;
+    }
+
+    function c() {
+        total = '';
+        temp = '';
+        document.querySelector(".display").innerHTML = Number(temp);
+        console.log(`total = ${total}`)
+        console.log(`temp = ${temp}`)
+    }
+
+    function sum() {
+        let totalNumber = eval(total);
+        total = String(eval(`(${total})`))
+        temp = '';
+        document.querySelector(".display").innerHTML = totalNumber;
+        document.querySelector("#disp").value = temp;
+        console.log(total);
+    }
+</script>
+
+</html>
