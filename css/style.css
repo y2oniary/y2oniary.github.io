@@ -285,13 +285,13 @@ a:focus {
 
     .heading {
       margin: 5vw auto 0;
-      width: 90%;
+      width: 90vw;
     }
     
     .work-list li {
       margin: 5vh auto;
       width: 90vw;
-      height: 70vh;
+      height: 90vw;
 
     }
 
