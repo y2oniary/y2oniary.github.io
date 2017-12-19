@@ -18,19 +18,20 @@ color.textContent = box[randNum].style.backgroundColor;
 
 // Event
 boxes.addEventListener('click', function (e) {
-  if (e.target.style.backgroundColor == color.textContent) {
-    count += 1;
-  } else {
-    count = 0;
-  }
+  if (e.target.nodeName === 'LI') {
+    if (e.target.style.backgroundColor == color.textContent) {
+      count += 1;
+    } else {
+      count = 0;
+    };
 
-  box.forEach(el => {
-    el.style.backgroundColor = randomColor();
-  })
+    box.forEach(el => {
+      el.style.backgroundColor = randomColor();
+    });
 
-  const randNum = Math.floor(Math.random() * 3);
-  color.textContent = box[randNum].style.backgroundColor;
+    const randNum = Math.floor(Math.random() * 3);
+    color.textContent = box[randNum].style.backgroundColor;
 
-  point.textContent = `Your Point: ${count}`;
-})
-
+    point.textContent = `Your Point: ${count}`;
+  };
+});
