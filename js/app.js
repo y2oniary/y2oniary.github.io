@@ -13,6 +13,10 @@ const vm = new Vue({
       {
         name: "Snake Game",
         link: "https://chayeoisnakegame.netlify.com/"
+      },
+      {
+        name: "RGB Challenge",
+        link: "./rgb-challenge/index.html"
       }
     ]
   }

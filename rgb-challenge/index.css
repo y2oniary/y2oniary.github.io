@@ -1,0 +1,49 @@
+html {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  padding: 0 0 50px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.heading {
+  margin: 25px auto;
+  padding: 25px;
+  width: 50vw;
+  font-weight: 300;
+  text-align: center;
+  background-color: khaki;
+}
+
+.color {
+  padding: 25px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #eee;
+  background-color: #272727;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.point {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
