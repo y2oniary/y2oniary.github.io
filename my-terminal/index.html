@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="app" class="container">
+    <h1 class="heading">Y2oniary Terminal</h1>
+    <div class="command">
+      <label for="input" class="label">Command</label>
+      <input type="text" name="" id="input" class="input" v-model="content">
+    </div>
+    <div class="terminal">
+      <div class="menu">
+        <div class="btn btn-1"></div>
+        <div class="btn btn-2"></div>
+        <div class="btn btn-3"></div>
+      </div>
+      <div class="screen">
+        <p class="y2oniary">Welcome to y2oniary.github.io!</p>
+        <p class="content"><span class="content-text">{{content}}</span></p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

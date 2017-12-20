@@ -37,6 +37,7 @@ ul {
 }
 
 .box {
+  margin-top: 20px;
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -46,4 +47,12 @@ ul {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    height: 70vw;
+    width: 70vw;
+    border-radius: 50%;
+  }
 }
