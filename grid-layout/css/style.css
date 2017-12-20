@@ -299,13 +299,13 @@ a:focus {
   margin-right: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .container {
     margin: 0 auto;
     position: relative;
     width: 960px;
   }
-  /* column */
+
   .col-md-1 {
     width: 120px;
   }
@@ -330,7 +330,7 @@ a:focus {
   .col-md-8 {
     width: 960px;
   }
-  /* push pull */
+
   .push-md-1 {
     left: 120px;
   }
@@ -379,7 +379,7 @@ a:focus {
   .pull-md-8 {
     right: 960px;
   }
-  /* prefix suffix*/
+
   .prefix-md-1 {
     margin-left: 120px;
   }
@@ -428,7 +428,7 @@ a:focus {
   .suffix-md-8 {
     margin-right: 960px;
   }
-}
+} */
 
 
 /* Style */
