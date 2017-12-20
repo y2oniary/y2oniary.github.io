@@ -227,7 +227,7 @@ body {
 .screen {
   border-radius: 0 0 6px 6px;
   min-height: 70vh;
-  font-family: Menlo, 'Menlo Regular', 'Source code', sans-serif;
+  font-family: 'Menlo Regular', Menlo, 'Source code', sans-serif;
   font-size: 1.2rem;
   color: #eff0eb;
   background-color: #282a36;
