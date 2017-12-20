@@ -150,15 +150,14 @@ body {
   padding: 15px 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 
 /* Style */
-
-.container {}
-
 .heading {
   padding: 20px;
   text-align: center;
@@ -184,8 +183,8 @@ body {
 .input {
   display: block;
   margin-top: 10px;
-  width: 256px;
-  height: 20px;
+  width: 384px;
+  height: 28px;
   border: transparent;
   border-radius: 2px;
   box-shadow: 0 5px 20px -3px #222222;
@@ -194,7 +193,6 @@ body {
 .terminal {
   margin: 1vw auto;
   width: 80vw;
-  box-shadow: 0 10px 20px 0px #222222;
 }
 
 .menu {
@@ -231,6 +229,7 @@ body {
   font-size: 1.2rem;
   color: #eff0eb;
   background-color: #282a36;
+  box-shadow: 0 10px 20px 0px #222222;
 }
 
 .y2oniary {
@@ -254,12 +253,19 @@ body {
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     border-color: transparent;
   }
-
   50% {
     border-color: orange;
   }
+}
 
+@media only screen and (max-width: 768px) {
+  .input {
+    margin-bottom: 1vw;
+    width: 70vw;
+    box-shadow: 0 5px 15px -2px #222222;
+  }
 }
