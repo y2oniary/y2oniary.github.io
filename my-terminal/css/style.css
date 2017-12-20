@@ -1,3 +1,7 @@
+@charset "utf-8";
+@import url("./normalize.css");
+@import url("./fonts.css");
+
 /* reset CSS */
 
 html,
@@ -184,12 +188,13 @@ body {
   height: 20px;
   border: transparent;
   border-radius: 2px;
-  box-shadow: 0 2px 20px -3px #222222;
+  box-shadow: 0 5px 20px -3px #222222;
 }
 
 .terminal {
   margin: 1vw auto;
   width: 80vw;
+  box-shadow: 0 10px 20px 0px #222222;
 }
 
 .menu {
@@ -222,7 +227,7 @@ body {
 .screen {
   border-radius: 0 0 6px 6px;
   min-height: 70vh;
-  font-family: menlo, 'Source code', sans-serif;
+  font-family: Menlo, 'Menlo Regular', 'Source code', sans-serif;
   font-size: 1.2rem;
   color: #eff0eb;
   background-color: #282a36;
