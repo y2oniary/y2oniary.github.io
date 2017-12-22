@@ -1,0 +1,89 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top {
+  background-color: steelblue;
+}
+
+.bottom {
+  flex-grow: 1;
+  background-color: #232323;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.heading__RGB {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.game-center {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxes {
+  display: flex;
+}
+
+.box {
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.box.show {
+  transform: scale(46);
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-button {
+  border: 1px solid white;
+  cursor: pointer;
+  padding: 10px;
+}
+

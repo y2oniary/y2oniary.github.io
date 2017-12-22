@@ -15,12 +15,16 @@ const vm = new Vue({
         link: "https://chayeoisnakegame.netlify.com/"
       },
       {
+        name: "My Terminal",
+        link: "./my-terminal/index.html"
+      },
+      {
         name: "RGB Challenge",
         link: "./rgb-challenge/index.html"
       },
       {
-        name: "My Terminal",
-        link: "./my-terminal/index.html"
+        name: "Real RGB Challenge",
+        link: "./rgb-challenge-real/index.html"
       }
     ]
   }
