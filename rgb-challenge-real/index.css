@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -55,7 +55,7 @@ body {
   width: 50px;
   border-radius: 50%;
   cursor: pointer;
-  transition: transform 0.5s;
+  transition: all 0.5s;
 }
 
 .box.show {
