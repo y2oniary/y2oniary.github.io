@@ -1,5 +1,5 @@
 const random255 = () => Math.floor(Math.random() * 256);
-const randomColor = () => `rgb(${random255()}, ${random255()}, ${random255()})`;
+const randomColor = () => `rgb(${random255()},${random255()},${random255()})`;
 
 let stage;
 let problem;
@@ -17,7 +17,7 @@ const draw = () => {
     el.style.backgroundColor = problem[index];
   });
   document.querySelector('.rgb-text').textContent = problem[correctAnswer];
-  document.querySelector('.score').textContent = stage;
+  document.querySelector('.score').textContent = `SCORE: ${stage}`;
 };
 
 const init = () => {
@@ -33,6 +33,7 @@ document.querySelectorAll('.box').forEach((el, index) => {
       document.querySelector('.correct').classList.add('show');
     } else {
       document.querySelector('.wrong').classList.add('show');
+      document.querySelector(".modal-score").textContent = `SCORE: ${stage}`;
     }
   });
 });
