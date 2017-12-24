@@ -25,6 +25,10 @@ const vm = new Vue({
       {
         name: "Real RGB Challenge",
         link: "./rgb-challenge-real/index.html"
+      },
+      {
+        name: "Todo List",
+        link: "./todo-list/index.html"
       }
     ]
   }
