@@ -11,6 +11,10 @@ const vm = new Vue({
         link: "./grid-layout/index.html"
       },
       {
+        name: "Calculator",
+        link: "./calculator/calculator.html"
+      },
+      {
         name: "Snake Game",
         link: "https://chayeoisnakegame.netlify.com/"
       },
