@@ -58,6 +58,3 @@ document.querySelector(".wrong .modal-button").addEventListener("click", e => {
 
 init();
 draw();
-
-init();
-draw();
