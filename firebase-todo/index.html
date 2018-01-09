@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <button id="login-button">로그인</button>
+  <div class="container">
+    <div class="top">
+      <h1 class="heading">My Todo List</h1>
+      <div class="todo">
+        <input type="text" name="todo" placeholder="할 일을 입력하세요." id="todo-input" class="todo-input">
+        <button id="add-button" class="add-button">add</button>
+      </div>
+    </div>
+    <ul id="todo-list" class="todo-list"></ul>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDCrF3Aq3nMBdE9PA25Swj31XIoQmYJDW4",
+      authDomain: "fds-firebase-todolist.firebaseapp.com",
+      databaseURL: "https://fds-firebase-todolist.firebaseio.com",
+      projectId: "fds-firebase-todolist",
+      storageBucket: "",
+      messagingSenderId: "434602727726"
+    };
+    firebase.initializeApp(config);
+
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,8 +1,8 @@
-const addButtonEL = document.querySelector('#ad-button');
+const addButtonEL = document.querySelector('#add-button');
 const inputEL = document.querySelector("#todo-input");
 const listEL = document.querySelector("#todo-list");
 
-document.querySelector('#add-button').addEventListener('click', e => {
+addButtonEL.addEventListener('click', e => {
   const itemEL = document.createElement("li");
   const contentEL = document.createElement("div");
   contentEL.classList.add('list-content');
