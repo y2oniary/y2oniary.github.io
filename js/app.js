@@ -33,6 +33,10 @@ const vm = new Vue({
       {
         name: "Todo List",
         link: "./todo-list/index.html"
+      },
+      {
+        name: "Firebase Todo",
+        link: "./firebase-todo/index.html"
       }
     ]
   }
